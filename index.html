@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Art Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — paintings, illustrations and graphic work." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Your Name</h1>
+    <nav class="site-nav">
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="gallery" class="gallery">
+      <!-- Duplicate this .card block for each artwork -->
+      <article class="card">
+        <img src="images/cat_image1.jpg"
+             srcset="images/cat_image1.jpg 480w"
+             sizes="(max-width:600px) 100vw, 50vw"
+             alt="Title of the artwork">
+        <h2>Artwork Title</h2>
+        <p class="meta">Oil on canvas — 2024</p>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>Short bio and artist statement.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">blabla@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Elina Wetzel</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

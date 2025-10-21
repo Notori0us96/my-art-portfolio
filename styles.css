@@ -1,0 +1,14 @@
+:root{--max-width:1200px; --gap:18px; --bg:#fafafa; --accent:#111;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--accent);line-height:1.45}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:18px;max-width:var(--max-width);margin:0 auto}
+.site-title{margin:0;font-size:1.25rem}
+.site-nav a{margin-left:14px;text-decoration:none;color:inherit}
+main{max-width:var(--max-width);margin:18px auto;padding:0 18px}
+.gallery{display:grid;gap:var(--gap);grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.card{background:white;border-radius:8px;padding:12px;box-shadow:0 6px 16px rgba(0,0,0,0.06)}
+.card img{width:100%;height:auto;display:block;border-radius:4px}
+.about,.contact{margin-top:28px;background:white;padding:18px;border-radius:8px}
+.site-footer{padding:18px;text-align:center;color:#666}
+@media (max-width:600px){.site-header{flex-direction:column;gap:8px}}
